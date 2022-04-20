@@ -1,0 +1,327 @@
+============================================
+2022-04-20
+
+flex-container 藍色 
+  1.flex-direction row/column
+  2.flex-wrap 換行
+  flex-flow
+  3.灰色對齊藍色方式 justify-content
+  align-items
+  align-content
+============================================
+flex
+先看主軸
+row
+column
+
+1.我要做個藍色flexbox
+2.方向 橫的 row
+  flex-direction: row; 
+  flex-direction: column; 
+3.三個灰色的小盒子
+
+4.掉下來 預設不可換行 
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+
+5.灰色寬 100% / 3
+ 
+
+<flexbox>
+  方向是row <---css
+  <灰色1>
+  <灰色2>
+  <灰色3>
+</flexbox>
+
+陷阱
+display:flex 
+宣告 我要用flexbox
+預設本來就橫的 row
+
+
+============================================
+display inline-block 沒有辦法用在網頁排版使用
+因為會有空格的產生
+
+display flex 可以解決排版問題
+============================================
+normalize.css 清空 瀏覽器預設
+
+1.先清空
+2.寫自己的css
+
+
+============================================
+background-image 
+
+============================================
+font-awesome 
+1.cdn.js font-awesome 6.1.1 
+  copy link tag
+2.<head>
+   <link> 貼上 </link>
+  </head> 
+3.找到你喜歡圖片 貼上
+  <i class="fa-solid fa-bus"></i>
+
+4.自己常用 free -> editing / files
+
+
+
+
+============================================
+2022-04-14
+============================================
+flexbox
+card-list 藍色
+card 灰色
+
+container 藍色
+
+============================================
+
+display 有三種屬性
+局部排版改變
+  1.block 換行 可width
+  2.inline 不會換行 不width 空白
+  2.inline-block 不會換行 可width 空白
+全面的排版
+diplay flex
+
+
+============================================
+padding     往內
+margin      往外推 兩個元件很接近 (以前 推開br br)
+border
+border-box  width = content + 2*padding + border
+contend-box width = content
+
+
+預設 width(content) + border  = 總共長度
+
+設定後
+box-sizing border-box
+width 總共長度 = content + padding + border
+
+============================================
+css 選擇器
+
+* 
+h1,h2,h3
+
+組合選擇器 CSS Combinators
+div + p       相近的第一個
+div ~ p       兄弟層
+div 空格 p    全部後代
+div > p       第一層
+
+a:hover
+a 去底線 text-decoration: none;
+
+input:focus
+
+table
+tr:nth-child(odd)
+tr:nth-child(even)
+
+::before
+::after
+
+============================================
+1 2 3 4 5 6 7 8 9 10
+到推學習
+大概知道老師在講哪個
+知道去哪裡抓資料
+
+
+邏輯的問題 ok
+語法的問題 老師用的語法關鍵字 我可不可以自己找到
+
+語法問題 怎麼用 為什麼被發明
+ios android python golan c++ php java javscript
+變數
+陣列
+迴圈
+物件導向
+
+
+
+============================================
+相對路徑
+./css/style.css  當層
+../       回上一層
+../../    回上兩層
+
+
+css 選擇器 CSS Selectors 權重
+* < p1,h1 .... < class < id < Inline CSS < !important
+
+連線css都了解
+External CSS
+Internal CSS
+Inline CSS
+重點知道去哪去哪找 比正確打出指令重要
+工程師 工作 open book
+
+
+============================================
+1.不知道要怎麼開始
+2.好像看懂一些
+3.可以把別人的要求寫出來
+4.可以設計出架構
+5.商業考量
+
+
+工作遇到問題
+1.寫下來問題
+外部css連線
+2.解決方法
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 外部連結css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+3.參考資料
+
+
+
+
+
+
+============================================
+2022-04-13
+css link方式
+1.行內css
+2.<head>
+	<style>
+	<style>
+  </head>
+
+3.外部css 建立css資料 style.css
+  <head>
+  	<link>
+  </head>
+============================================
+2022-04-13
+============================================
+1.html
+1.html 頭尾成對語言
+2.php 不需要成對
+
+html->table
+
+table 成對
+1.<table> </table>
+2.table row <tr></tr>	
+2.table data <td></td>	
+
+form 成對
+1.<form></form>
+2.
+id: 綁定css / js ID 不可以重複 一個網頁只可以有一個
+name: 欄位名稱
+3.
+label for 是抓input id
+4.form 不能 包form
+5.action 要去的地方 類似a tag
+6.select 不一樣
+ol
+ li
+ li
+ul
+ li
+ li
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+前端 html->form-><input name="columnName">
+php 接收欄位名稱
+
+excel + vscode
+alt+左鍵        				多選
+ctrl+d 						選擇該欄位全部
+ctrl+ 左右鍵 				可以跳
+ctrl+shift + 左右鍵 			選擇全部
+alt+ 上下 					可移動單行
+ctrl+c 可以複製整行 			未選取下
+ctrl+b						檔案總管隱藏
+ctrl + (+-)					可以放大縮小
+ctrl+tab                    切換檔案
+檔案分頁上面 向右分割
+win+左右
+
+
+虛擬桌面windows
+電腦玩物 
+https://www.playpcesor.com/2015/08/windows-10-task-view.html
+win+tab 新增後
+ctrl+win+左右鍵
+
+============================================
+練習一
+花茶 紅色
+咖啡 咖啡色
+
+練習二 
+1.報名表單 
+
+如果同一頁面 有兩個form ?
+column coffee
+
+
+============================================
+思考兩種
+作家寫作
+1.一直寫下去 111 222 333 444 .... 9999
+2.改錯字 改句子通順 重構
+
+好文章是改出來的
+程式也是一樣
+
+
+
+============================================
+1.用中文方式寫程式
+2.邏輯或語法問題
+
+把客戶模糊不清的需求 具象化
+
+3.前端顯示頁面 html css js前端顯示畫面
+4.後端整理資料 php  後端客人看不到 捷運票卡 購物網站 等等商業邏輯
+5.資料庫規劃 db 營收報表
+
+點飲料系統
+1.前端 點飲料畫面
+2.後端 計算多少錢 買幾杯
+3.資料庫 統計營收報表
+
+麥當勞點餐
+1.前端 點麥當勞畫面
+2.後端 計算多少錢 買幾杯
+3.資料庫 營收報表
+
+小紅帽故事書
+1.前端 故事書顯示的畫面
+2.後端 計算要去哪頁 放哪個聲音 放哪個圖片
+3.資料庫 台詞 圖片檔名 聲音檔名 
+
+hr人事系統
+1.前端 員工出缺勤統計
+2.後端 計算出勤紀錄 
+3.資料庫 員工實際打卡資料
+
+學生成績登入系統
+1.前端 name chinese english math
+============================================

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- https://fontawesome.com/ -->
+    <style>
+        span.a {
+            display: inline;
+            /* the default for span */
+            width: 100px;
+            height: 100px;
+            font-size: 60px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: green;
+            color:whitesmoke;
+        }
+
+        span.b {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+
+        span.c {
+            display: block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#"><i class="fa-solid fa-user"></i> &nbsp;回首頁</a>
+    <br><br><br>
+    <button class="button"> <i class="fa-solid fa-user"></i>&nbsp;btn</button>
+    <br><br><br>
+    <i class="fa-solid fa-user"></i>
+
+    <h1><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i
+            class="fa-solid fa-user"></i>The display Property</h1>
+
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat. <span class="a"><i class="fa-solid fa-bus"></i>Aliquam</span> <span
+            class="a">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+    <h2>display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+    <h2>display: block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+</body>
+
+</html>
